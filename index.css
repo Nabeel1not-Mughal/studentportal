@@ -1,0 +1,123 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #E9F2FF, #fff);
+    }
+
+    .sidebar {
+      width: 220px;
+      background: #2C3E50;
+      color: white;
+      padding: 20px;
+      box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar h2 {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 8px;
+      transition: background .3s;
+    }
+
+    .sidebar a:hover {
+      background: #1B5E20;
+    }
+
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background: #fff;
+      border-bottom: 1px solid #ccc;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .header h1 {
+      color: #1B5E20;
+    }
+
+    .header input{
+      padding: 8px;
+      border: 1px solid #ccc; 
+      border-radius: 5px;
+      width: 200px;
+      transition: box-shadow .2s;
+    }
+
+    .header input:focus {
+      box-shadow: 0 0 4px rgba(46, 125, 50, 0.5);
+    }
+
+    iframe {
+      flex: 1;
+      border: none;
+    }
+
+    #search {
+      width: 500px;
+    }
+
+    .toggle-btn {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    @media(max-width:768px) {
+      .sidebar {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: 100;
+      }
+
+      .sidebar.show {
+        display: block;
+        background: #2C3E50;
+      }
+
+      .toggle-btn {
+        display: block;
+        color: #1B5E20;
+      }
+    }
+
+    body.dark-mode {
+      background: #121212;
+      color: #eee;
+    }
+
+    .dark-mode .sidebar {
+      background: #1f1f1f;
+    }
+
+    .dark-mode .header,
+    .dark-mode iframe {
+      background: #1f1f1f;
+      color: #eee;
+    }

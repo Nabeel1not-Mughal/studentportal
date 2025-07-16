@@ -1,0 +1,118 @@
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background: linear-gradient(to right, #E9F2FF, #fff);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #1B5E20;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 15px;
+    }
+
+    th, td {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      text-align: left;
+    }
+
+    th {
+      background: #2C3E50;
+      color: white;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 6px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .save-btn, .save-all-btn {
+      background: #1B5E20;
+      color: white;
+      padding: 6px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .save-btn:hover, .save-all-btn:hover {
+      background: #2E7D32;
+    }
+
+    .no-data {
+      text-align: center;
+      color: #777;
+      padding: 20px;
+    }
+
+    .toast-confirm {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .toast-confirm button {
+      padding: 4px 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      color: white;
+    }
+
+    .yes-btn {
+      background-color: #2E7D32;
+    }
+
+    .no-btn {
+      background-color: #f44336;
+    }
+
+    .center {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* Dark mode */
+    body.dark-mode {
+      background: #121212;
+      color: #eee;
+    }
+
+    .dark-mode .container {
+      background: #1f1f1f;
+      color: #eee;
+    }
+
+    .dark-mode th {
+      background: #444;
+      color: #eee;
+    }
+
+    .dark-mode td {
+      border-color: #555;
+    }
+
+    .dark-mode input, .dark-mode select {
+      background: #2a2a2a;
+      color: #fff;
+      border-color: #555;
+    }

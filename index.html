@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="sidebar">
+    <h2>Welcome, <span id="name"></span></h2>
+    <a href="welcome.html" target="frame">Home</a>
+    <a href="submitData.html" target="frame">Add Student</a>
+    <a href="readData.html" target="frame">View Records</a>
+    <a href="editData.html" target="frame">Edit Records</a>
+    <a href="deleteData.html" target="frame">Delete Records</a>
+    <a href="summary.html" target="frame">Quick Stats</a>
+    <a href="charts.html" target="frame">Charts</a>
+    <a href="account.html" target="frame">Account Info</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+  <div class="main">
+    <div class="header">
+      <div class="toggle-btn" onclick="toggleSidebar()">☰</div>
+      <h1>Dashboard</h1>
+      <input id="search" placeholder="Search..." oninput="broadcast(this.value)">
+      <label>
+        <input type="checkbox" id="darkToggle" onchange="toggleDark()" />
+        Dark Mode
+      </label>
+    </div>
+    <iframe name="frame" src="welcome.html"></iframe>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

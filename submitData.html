@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Student</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<link rel="stylesheet" href="submitData.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="dark-toggle">
+      <label>
+        <input type="checkbox" id="darkToggle" onchange="toggleDark()"> Dark Mode
+      </label>
+    </div>
+    <h2>Add Student Record</h2>
+    <form onsubmit="submitStudent(event)">
+      <label>Name</label>
+      <input id="name" type="text" required>
+
+      <label>Father's Name</label>
+      <input id="fatherName" type="text" required>
+
+      <label>Course</label>
+      <select id="course" required>
+        <option value="">--Select--</option>
+        <option>Nursery</option>
+        <option>Play</option>
+        <option>Primary</option>
+        <option>Middle</option>
+        <option>Matric</option>
+        <option>Intermediate</option>
+      </select>
+
+      <label>Gender</label>
+      <select id="gender" required>
+        <option value="">--Select--</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="submitData.js"></script>
+</body>
+</html>

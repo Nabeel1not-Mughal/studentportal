@@ -1,0 +1,25 @@
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #E9F2FF, #fff);
+      padding: 40px;
+      text-align: center;
+    }
+    h2 {
+      color: #1B5E20;
+      margin-bottom: 30px;
+    }
+    .placeholder {
+      background: #fff;
+      padding: 60px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      color: #999;
+    }
+    body.dark-mode {
+      background: #121212;
+      color: #eee;
+    }
+    .dark-mode .placeholder {
+      background: #1f1f1f;
+      color: #bbb;
+    }
